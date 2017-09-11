@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import Login from "./components/login";
 import PrimaryBox from "./components/primaryBox";
-import Layout from "./components/layout";
 import MovieDetails from "./components/movieDetails";
 
 export class MyApp extends React.Component{
@@ -23,7 +22,6 @@ export class MyApp extends React.Component{
             </div>
           </header>
           <Route exact path="/" component={PrimaryBox}/>
-          {/* <Route exact path="/" component={MovieDetails}/> */}
           <Route path="/movie/:id" component={MovieDetails}/>
           <footer>
             <h2>Footer</h2>
@@ -55,8 +53,6 @@ export class MyApp extends React.Component{
               </ul>
             </section>
           </footer>
-          
-          {/* <Route path="/main" component={Layout}/> */}
           
         </div>
       </Router>

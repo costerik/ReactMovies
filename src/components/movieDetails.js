@@ -10,8 +10,6 @@ export default class MovieDetails extends React.Component{
         this.state ={
             movieData: null
         }
-
-        this.handleError = this.handleError.bind(this);
     }
 
     componentWillMount(){
@@ -25,10 +23,6 @@ export default class MovieDetails extends React.Component{
             console.log(err);
             console.log("Sorry an error has acurred fetching movie details!");
         });
-    }
-
-    handleError(){
-        this.imag='imagefound.gif';
     }
 
     imagesPath(key, gender){
@@ -97,18 +91,6 @@ export default class MovieDetails extends React.Component{
                     </Slider> 
                 </div>
             </div>
-            // <div className="md-content-elenco">
-            //     <div className="wrapper clearfix">
-            //         <p>Elenco principal</p>
-            //         <div className="col-md-12 col-sm-12">
-            //             <ul className="md-list-actors">
-            //                 {
-            //                     list
-            //                 }
-            //             </ul>
-            //         </div>
-            //     </div>
-            // </div>
         );
     }
 

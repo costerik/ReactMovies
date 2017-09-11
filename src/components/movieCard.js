@@ -17,19 +17,6 @@ export default class MovieCard extends React.Component{
             });
             this.setState({genres: genresMap});
         }
-        // let res=MyService.getGenres();
-        // res.then((response)=>{
-        //     response.json().then((result)=>{
-        //         result.genres.forEach( genre => {
-        //             genresMap[genre.id]=genre.name;
-        //         });
-        //         this.setState({genres: genresMap});
-        //     })
-        // }).catch((err)=>{
-        //     // Error :(
-        //     console.log("Sorry an error has ocurred fetching genres");
-        // });
-        // this.setState({genres: genresMap });
     }
 
     matchGenres(){
