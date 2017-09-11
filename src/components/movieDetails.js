@@ -2,6 +2,7 @@ import React from 'react';
 import css from '../movieDetails.css';
 import { DropdownButton, MenuItem } from 'react-bootstrap';
 import MyService from '../services/Myservice';
+import Slider from 'react-slick';
 
 export default class MovieDetails extends React.Component{
     constructor(props){
@@ -30,11 +31,12 @@ export default class MovieDetails extends React.Component{
         this.imag='imagefound.gif';
     }
 
-    imagesPath(key){
+    imagesPath(key, gender){
         if(key){
             return MyService.imagesUrl342+key;
         }else{
-            return "/dist/images/profile-icon.png";
+            return gender==1?"https://sbxcloud.com/www/mytest/avatar-woman.png":
+                             "https://sbxcloud.com/www/mytest/avatar-man.png";
         }
     }
 
@@ -64,33 +66,49 @@ export default class MovieDetails extends React.Component{
     }
 
     Actors(data){
-        let list=data.slice(0, 5).map( actor =>{
+        let list=data.map( actor =>{
             return(
-                <li key={actor.id}>
-                    <img src={this.imagesPath(actor.profile_path)} onError={this.handleError()} ref={ img => this.imgActor=img }>
+                <div key={actor.id} className="md-list-actors">
+                    <img src={this.imagesPath(actor.profile_path, actor.gender)}>
                     </img>
                     <div>
                         <p>{actor.name}</p>
                         <p>{actor.character}</p>
                     </div>
                     
-                </li>
+                </div>
             )
         });
+        let settings = {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 5,
+            slidesToScroll: 1
+          };
 
         return(
             <div className="md-content-elenco">
-                <div className="wrapper clearfix">
+                <div className="wrapper">
                     <p>Elenco principal</p>
-                    <div className="col-md-12 col-sm-12">
-                        <ul className="md-list-actors">
+                    <Slider {...settings}>
                             {
                                 list
                             }
-                        </ul>
-                    </div>
+                    </Slider> 
                 </div>
             </div>
+            // <div className="md-content-elenco">
+            //     <div className="wrapper clearfix">
+            //         <p>Elenco principal</p>
+            //         <div className="col-md-12 col-sm-12">
+            //             <ul className="md-list-actors">
+            //                 {
+            //                     list
+            //                 }
+            //             </ul>
+            //         </div>
+            //     </div>
+            // </div>
         );
     }
 
