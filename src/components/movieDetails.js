@@ -47,7 +47,7 @@ export default class MovieDetails extends React.Component{
                     <div className="col-md-4 col-sm-4">
                         <img src={this.imagesPath(data.poster_path)}></img>
                     </div>
-                    <div className="col-md-8 col-sm-8">
+                    <div className="col-md-8 col-sm-4">
                         <div className="md-right">
                             <p>{data.original_title }  {  new Date(data.release_date).getFullYear()}</p>
                             <p><i className="md-percentage">{((data.vote_average*100))/10}%</i>User score</p>
@@ -139,31 +139,31 @@ export default class MovieDetails extends React.Component{
         }
         return (
             <div className="md-content-datos">
-                <div className="wrapper clearfix">
+                <div className="wrapper">
                     <p>Datos</p>
-                    <div className="col-md-12 col-sm-12">
-                        <ul className="md-list-datos row">
-                            <li className="col-md-2 col-sm-4">
+                    <div className="">
+                        <ul className="md-list-datos">
+                            <li className="">
                                 <p>Titulo original</p>
                                 <p>{data.original_title}</p>
                             </li>
-                            <li className="col-md-2 col-sm-4">
+                            <li className="">
                                 <p>Estatus</p>
                                 <p>{data.status}</p>
                             </li>
-                            <li className="col-md-2 col-sm-4">
+                            <li className="">
                                 <p>Lenguaje Original</p>
                                 <p>{data.original_language}</p>
                             </li>
-                            <li className="col-md-2 col-sm-4">
+                            <li className="">
                                 <p>Duración</p>
                                 <p>{data.runtime} min</p>
                             </li>
-                            <li className="col-md-2 col-sm-4">
+                            <li className="">
                                 <p>Presupuesto</p>
                                 <p>{MyService.formatter(Number(data.budget))}</p>
                             </li>
-                            <li className="col-md-2 col-sm-4">
+                            <li className="">
                                 <p>Ingresos</p>
                                 <p>{MyService.formatter(Number(data.revenue))}</p>
                             </li>

@@ -52,6 +52,10 @@
     padding: 30px 0px;
 }
 
+.md-content-elenco .wrapper, .md-content-datos .wrapper{ 
+    width: 80%;
+}
+
 .md-content-elenco .wrapper>p, .md-content-datos .wrapper>p, .md-content .video>p{
     padding: 15px 0px;
     font-size: 20px;
@@ -65,26 +69,28 @@
 
 .md-list-actors img{
     border-radius: 3px 3px 0px 0px;
-    height: 278px;
-    width: 185px;
+    height: 90px;
+    width: 64px;
 }
 
 .md-list-actors div{
     background: white;
-    padding: 15px;
+    padding: 5px;
     border-radius: 0px 0px 3px 3px ;
-    width: 185px;
+    width: 64px;
 }
 
 .md-list-actors div p{
-    max-width: 155px;
+    max-width: 64px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-size: 6px;
 }
 
 .md-list-datos li{
-    padding: 40px 0px 40px 0px;
+    padding: 10px 0px 10px 0px;
+    width: 45%;
 }
 
 .md-list-datos li p{
@@ -112,9 +118,38 @@ iframe{
     width: 90%;
 }
 
-.slider-actors{
-    height: 200px;
-    width: 100px
-} 
+@media screen and (min-width:30.063em){
+    .md-content-top img{
+        width: 250px;
+        height: 400px;
+    }
 
+    .md-content .md-right{
+        height: 400px;
+    }
+}
 
+@media screen and (min-width:48.063em){
+    .md-list-datos li{
+        padding: 40px 0px 40px 0px;
+        width: 15%;
+    }
+
+    .md-list-actors img{
+        height: 278px;
+        width: 185px;
+    }
+
+    .md-list-actors div{
+        width: 185px;
+    }
+
+    .md-list-actors div{
+        padding: 15px;
+    }
+
+    .md-list-actors div p{
+        font-size: 15px;
+        max-width: 185px;
+    }
+}

@@ -1,104 +1,126 @@
-
 html,body,aside,figure,figcaption,header,section,article,footer,nav,h1,h2,h3,h4,h5,h6,div,p,a,span,ul,ol,li,span{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  body{
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+  }
+  
+  header{
+    background: #2A2E39;
+    height: 100px;
+    color: white;
+    position: relative;
+  }
+
+  p.p-title{
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+  }
+  
+  header h1{
+    padding: 20px 20px 0px 0px;
+    display: inline-block;
+  }
+  
+  header h1 a{
+    background: url(../images/logo.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    text-indent: -9999px;
+    outline: none;
+    display: inline-block;
+  }
+  
+  footer h2{
+    display: none;
+  }
+  
+  .footer-logos{ 
+    background: #5A5B62; 
+    color: white;
+    text-align:center;
+    padding: 60px 0px 60px 0px;
+  }
+  
+  .footer-logos ul{
+    margin:0;
+    padding:0;
+    display: inline-block;
+  }
+  
+  .footer-logos ul li{
+    margin: 0px 10px 0px 10px;
+    list-style-type:none;
+    display: inline-block;
+  }
+  
+  .footer-logos ul li a{
+    border-radius: 30px;
+    background: white;
+    line-height: 70px;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+  }
+  
+  .footer-logos ul li i{ color: #46494F; }
+  
+  .footer-links{ background: #4E5056}
+  .footer-links ul{
+    margin:0;
+    padding:0;
+    text-align:center;
+  }
+  
+  .footer-links ul li{
+    border-right:0.063em solid white;
+    list-style-type:none;
+    text-align:center;
+    /* display: inline-block; */
+    display: block;
+    padding:0 1.188em;
+  }
+  
+  .footer-links ul li:last-child{
+    border:0;
+    padding-right:0;
+  }
+  
+  .footer-links a{
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links ul{
+    padding: 10px 0px;
+  }
+
+@media screen and (min-width:48.063em){
+  .wrapper{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer-links ul li{
+    border-right:0.063em solid white;
+    list-style-type:none;
+    text-align:center;
+    display: inline-block;
+    padding:0 1.188em;
+  }
 }
 
-.wrapper{
-  width: 80%;
-  margin: 0 auto;
-}
-
-body{
-  font-family:"Open Sans", Arial, Helvetica, sans-serif;
-  margin:0;
-  padding:0;
-}
-
-header{
-  background: #2A2E39;
-  height: 100px;
-  color: white;
-}
-
-header h1{
-  padding: 20px 40px 20px 0px;
-  display: inline-block;
-}
-
-header h1 a{
-  background: url(../images/git.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 50px;
-  width: 50px;
-  text-indent: -9999px;
-  outline: none;
-  display: inline-block;
-}
-
-footer h2{
-  display: none;
-}
-
-.footer-logos{ 
-  background: #5A5B62; 
-  color: white;
-  text-align:center;
-  padding: 60px 0px 60px 0px;
-}
-
-.footer-logos ul{
-  margin:0;
-  padding:0;
-  display: inline-block;
-}
-
-.footer-logos ul li{
-  margin: 0px 10px 0px 10px;
-  list-style-type:none;
-  display: inline-block;
-}
-
-.footer-logos ul li a{
-  border-radius: 30px;
-  background: white;
-  line-height: 70px;
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-}
-
-.footer-logos ul li i{ color: #46494F; }
-
-.footer-links{ background: #4E5056}
-.footer-links ul{
-  margin:0;
-  padding:0;
-  text-align:center;
-}
-
-.footer-links ul li{
-  border-right:0.063em solid white;
-  list-style-type:none;
-  text-align:center;
-  display: inline-block;
-  padding:0 1.188em;
-}
-
-.footer-links ul li:last-child{
-  border:0;
-  padding-right:0;
-}
-
-.footer-links a{
-  font-size: 13px;
-  color: white;
-  text-decoration: none;
-}
-
-.footer-links ul{
-  padding: 10px 0px;
-}

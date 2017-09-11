@@ -19,10 +19,11 @@ export class MyApp extends React.Component{
           <header>
             <div className="wrapper">
               <h1><Link to="/"></Link></h1>
-              Descubre
+              <p className="p-title">Descubre</p>
             </div>
           </header>
           <Route exact path="/" component={PrimaryBox}/>
+          {/* <Route exact path="/" component={MovieDetails}/> */}
           <Route path="/movie/:id" component={MovieDetails}/>
           <footer>
             <h2>Footer</h2>

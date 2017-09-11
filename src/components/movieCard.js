@@ -51,17 +51,17 @@ export default class MovieCard extends React.Component{
                 </Link>
                 <div className="mc-data-movie">
                     <div>
-                        <div className="row title">
-                            <div className="col-md-9">
+                        <div className="title">
+                            <div className="mc-start">
                             <Link to={`movie/${this.props.data.id}`}>
                                 {this.props.data.original_title}
                             </Link>
-                                
+                                <div className="average push-right">
+                                    {this.props.data.vote_average}
+                                    <i className="fa fa-star"></i>
+                                </div>  
                             </div>
-                            <div className="col-md-3 average">
-                                {this.props.data.vote_average}
-                                <i className="fa fa-star"></i>
-                            </div>
+                            
                         </div>
                         <div className="year">
                             <p className="">{new Date(this.props.data.release_date).getFullYear() }</p>
