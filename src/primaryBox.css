@@ -1,0 +1,80 @@
+/*
+* PrimaryBox Rules
+*/
+
+input.pb{
+    width: 90%;
+    border: none;
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    background: #E1E2E6;
+  }
+  
+  input:focus{
+    outline: none;
+  }
+  
+  .pb-content{
+    background: #D6D8DD;
+    /* height: 300px; */
+  }
+  
+  #filters-section h4{
+    padding: 20px 0px 20px 0px;
+  }
+  
+  .pb-search{
+    width: 100%;
+    background: #E1E2E6;
+    /* position: relative; */
+    border-bottom: 1px solid #CCC;
+  }
+
+  .pb-result-search{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #E1E2E6;;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto; 
+  }
+
+  .pb-result-search div.movie-result{
+    border-bottom: 1px solid #CCC;
+    padding: 15px 0px;
+    color: black;
+    /* border-top: 1px solid #CCC; */
+  }
+
+  .pb-result-search div.inline{
+    display: inline-block;
+  }
+
+  .pb-result-search div.inline p{
+    padding: 5px;
+  }
+  
+  .pb-filters{
+    display: inline-block;
+    width: 20%;
+  }
+  .pb-filters label{
+    display: block;
+  }
+
+  .pb-filters input{
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  .pb-center{
+      padding-bottom: 20px;
+  }
+
+  .pb-center i.fa-spinner{
+    display: block;
+    text-align: center;
+  }
+

@@ -1,0 +1,114 @@
+.md-content-top{
+    padding: 30px 0px;
+}
+
+/*Just for laod the images in dist*/
+.md-content-top a{
+    background: url(../images/profile-icon.png) no-repeat center center;
+}
+
+.md-content-top{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#7C7B7B, #525252); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#7C7B7B, #525252); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#7C7B7B, #525252); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#7C7B7B, #525252); /* Standard syntax */
+    color: white;
+}
+
+.md-content .md-percentage{
+    display:inline-block;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    background: #494848;
+    text-align: center;
+}
+.md-content .md-right{
+    height: 513px;
+    position: relative;
+}
+
+.md-content .md-right>div{
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0px;
+}
+
+.md-content .md-right>p{
+    padding: 15px 0px 15px 0px;
+}
+
+.md-content ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.md-content-elenco, .md-content-datos{
+    background: #D6D8DD;
+    padding: 30px 0px;
+}
+
+.md-content-elenco .wrapper>p, .md-content-datos .wrapper>p, .md-content .video>p{
+    padding: 15px 0px;
+    font-size: 20px;
+}
+
+.md-list-actors li{
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.md-list-actors img{
+    border-radius: 3px 3px 0px 0px;
+    height: 278px;
+    width: 185px;
+}
+
+.md-list-actors div{
+    background: white;
+    padding: 15px;
+    border-radius: 0px 0px 3px 3px ;
+}
+
+.md-list-actors div p{
+    max-width: 155px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.md-list-datos li{
+    padding: 40px 0px 40px 0px;
+}
+
+.md-list-datos li p{
+    padding: 5px 0px 5px 0px;
+}
+
+.md-globes li{
+    background: #71CE6E;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+.md-content .video{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.md-content .video p{
+    text-align: left;
+   
+}
+
+iframe{
+    height: 500px;
+    width: 90%;
+}
+
+
