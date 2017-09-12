@@ -45,7 +45,7 @@ module.exports = {
         compress: true,
         //port: 9000,
         stats: "errors-only",
-        hot: true  //enable hot module replacement(HMR)
+        hot: true //enable hot module replacement(HMR)
     },
     plugins: [
         new HtmlWebpackPlugin({

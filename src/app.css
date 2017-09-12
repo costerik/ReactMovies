@@ -33,7 +33,7 @@ html,body,aside,figure,figcaption,header,section,article,footer,nav,h1,h2,h3,h4,
   }
   
   header h1 a{
-    background: url(../images/logo.png) no-repeat center center;
+    background: url(https://sbxcloud.com/www/mytest/logo.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -67,13 +67,13 @@ html,body,aside,figure,figcaption,header,section,article,footer,nav,h1,h2,h3,h4,
     list-style-type:none;
     display: inline-block;
   }
-  
+
   .footer-logos ul li a{
     border-radius: 30px;
     background: white;
-    line-height: 70px;
-    height: 60px;
-    width: 60px;
+    line-height: 60px;
+    height: 50px;
+    width: 50px;
     display: inline-block;
   }
   
@@ -90,14 +90,12 @@ html,body,aside,figure,figcaption,header,section,article,footer,nav,h1,h2,h3,h4,
     border-right:0.063em solid white;
     list-style-type:none;
     text-align:center;
-    /* display: inline-block; */
     display: block;
     padding:0 1.188em;
   }
   
   .footer-links ul li:last-child{
     border:0;
-    padding-right:0;
   }
   
   .footer-links a{
@@ -115,12 +113,18 @@ html,body,aside,figure,figcaption,header,section,article,footer,nav,h1,h2,h3,h4,
     width: 80%;
     margin: 0 auto;
   }
-  .footer-links ul li{
-    border-right:0.063em solid white;
-    list-style-type:none;
-    text-align:center;
+
+  .footer-logos ul li a{
+    border-radius: 30px;
+    background: white;
+    line-height: 70px;
+    height: 60px;
+    width: 60px;
     display: inline-block;
-    padding:0 1.188em;
+  }
+  
+  .footer-links ul li{
+    display: inline-block;
   }
 }
 

@@ -2,18 +2,27 @@
     padding: 30px 0px;
 }
 
-/*Just for laod the images in dist*/
-.md-content-top a{
-    background: url(../images/profile-icon.png) no-repeat center center;
+.md-content-top img{
+    width: 100%;
+    height: 400px;
 }
 
+/*Just for laod the images in dist*/
+/* .md-content-top a{
+    background: url(../images/profile-icon.png) no-repeat center center;
+} */
+
 .md-content-top{
-    background: red; /* For browsers that do not support gradients */
+    background: #7C7B7B; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#7C7B7B, #525252); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#7C7B7B, #525252); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#7C7B7B, #525252); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#7C7B7B, #525252); /* Standard syntax */
     color: white;
+}
+
+.md-right p:first-child{
+    font-size: 20px;
 }
 
 .md-content .md-percentage{
@@ -119,11 +128,6 @@ iframe{
 }
 
 @media screen and (min-width:30.063em){
-    .md-content-top img{
-        width: 250px;
-        height: 400px;
-    }
-
     .md-content .md-right{
         height: 400px;
     }

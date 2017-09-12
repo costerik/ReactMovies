@@ -1,6 +1,6 @@
 .mc-content img{
-    height: 281px;
-    width: 185px;
+    height: 278px;
+    width: 30%;
 }
 
 .mc-content{
@@ -13,8 +13,9 @@
 }
 
 .mc-data-movie{
-    display: block;
-    /* width: 63%; */
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
     height: 278px;
     position: relative;
 }
@@ -64,16 +65,12 @@
 }
 
 @media screen and (min-width:48.063em){
+
+
     .mc-content{
         width: 45%;
         display: inline-block;
     }
 
-    .mc-data-movie{
-        display: inline-block;
-        vertical-align: top;
-        width: 63%;
-        height: 278px;
-        position: relative;
-    }
+
 }

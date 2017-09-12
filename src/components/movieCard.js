@@ -43,7 +43,7 @@ export default class MovieCard extends React.Component{
                             <Link to={`movie/${this.props.data.id}`}>
                                 {this.props.data.original_title}
                             </Link>
-                                <div className="average push-right">
+                                <div className="average">
                                     {this.props.data.vote_average}
                                     <i className="fa fa-star"></i>
                                 </div>  

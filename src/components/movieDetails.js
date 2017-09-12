@@ -38,10 +38,10 @@ export default class MovieDetails extends React.Component{
         return (
             <div className="md-content-top">
                 <div className="wrapper clearfix">
-                    <div className="col-md-4 col-sm-4">
+                    <div className="col-sm-3 col-md-3  ">
                         <img src={this.imagesPath(data.poster_path)}></img>
                     </div>
-                    <div className="col-md-8 col-sm-4">
+                    <div className="col-sm-9 col-md-9">
                         <div className="md-right">
                             <p>{data.original_title }  {  new Date(data.release_date).getFullYear()}</p>
                             <p><i className="md-percentage">{((data.vote_average*100))/10}%</i>User score</p>
