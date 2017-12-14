@@ -1,10 +1,10 @@
-import css from './app.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import css from './app.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route, Link, browserHistory } from 'react-router-dom'
 // import Login from "./components/login";
-import PrimaryBox from "./components/primaryBox";
-import MovieDetails from "./components/movieDetails";
+import PrimaryBox from "./components/primaryBox"
+import MovieDetails from "./components/movieDetails"
 
 export class MyApp extends React.Component{
   constructor(props){
@@ -13,7 +13,7 @@ export class MyApp extends React.Component{
   
   render(){
     return(
-      <Router>
+      <Router history={browserHistory}>
         <div>
           <header>
             <div className="wrapper">

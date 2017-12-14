@@ -1,7 +1,8 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var webpack = require('webpack');  //this is required for HMR
-var path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');  //this is required for HMR
+const path = require('path');
+const WebpackDevServer = require('webpack-dev-server');
 
 let isProd = process.env.ENV === 'prod' ? true : false;
 let cssDev = [ "style-loader","css-loader"];
@@ -12,12 +13,14 @@ let cssProd = ExtractTextPlugin.extract({   //HMR doesnt work with ExtractTextPl
                 });
 
 module.exports = {
+    devtool: 'cheap-module-eval-source-map',
     entry:{ 
         app: './src/app.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle.js' //[name] refer to properties on entry object
+        filename: '[name].bundle.js', //[name] refer to properties on entry object
+        publicPath: '/'
     },
     module:{
         rules:[
@@ -45,7 +48,9 @@ module.exports = {
         compress: true,
         //port: 9000,
         stats: "errors-only",
-        hot: true //enable hot module replacement(HMR)
+        historyApiFallback: { disableDotRule: true },
+        hot: true, //enable hot module replacement(HMR),
+        stats: { colors: true }
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -69,5 +74,7 @@ module.exports = {
         'react/addons': 'react',
         'react/lib/ExecutionEnvironment': 'react',
         'react/lib/ReactContext': 'react',
-      },
+      }
 }
+console.log("URL PATH "+path.join(__dirname, "dist"));
+console.log("IS PROD? "+isProd);
